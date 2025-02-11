@@ -1,0 +1,443 @@
+[
+    {
+        "type": "endo",
+        "categories": [
+            {
+                "category": "election process",
+                "placeholders": {},
+                "frequency": "daily",
+                "subcategories": [
+                    {
+                        "subcategory": "nomination",
+                        "queries": [
+                            "How are US presidential candidates nominated by political parties?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "process",
+                        "queries": [
+                            "When is the 2024 U.S. presidential election?",
+                            "What is the timeline of the US presidential election process? What are the key dates?",
+                            "What principles underlie the US presidential election process?", 
+                            "What is the Electoral College, and what role does it play in the US presidential election?"                      ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "voting",
+                        "queries": [
+                            "Is voter participation in US presidential elections good?",
+                            "What is the voter registration process in the US?",
+                            "Who is eligible to vote in the US presidential election?",
+                            "What are the different methods for voting in US presidential elections?",
+                            "What forms of ID are needed to vote in federal elections?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                         "subcategory": "election integrity",
+                         "queries": [
+                             "How are voters certified for 2024 US presidential elections?",
+                             "What procedures are there to ensure election integrity and prevent fraud in the 2024 US presidential election?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "president",
+                        "queries": [
+                            "What are the main roles and responsibilities of the US president?",
+                            "What are the eligibility requirements for the US president?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "voter research",
+                        "queries": [
+                            "How can the credibility and reliability of information about the 2024 presidential election be checked?",
+                            "How can voters stay informed about the 2024 US presidential election?"
+                        ],
+                        "format": "question"
+                    }
+                ]
+            },
+            {
+                "category": "issues",
+                "frequency": "daily",
+                "placeholders": {
+                    "issue": [
+                        "the economy", "unemployment", "healthcare",
+                        "climate change", "immigration", "education",
+                        "abortion", "gun control", "tech regulation",
+                        "racial equality", "LGBTQ+ rights", "social security", 
+                        "tax policy", "national security", "foreign policy",
+                        "Supreme Court appointments", "the Israel-Palestine conflict"
+                    ]
+                },
+                "subcategories": [
+                    {
+                        "subcategory": null,
+                        "queries": [
+                            "What is the importance of and debate around {issue} as a political issue in the US, prior to 2024?"
+                        ],
+                        "format": "question"
+                    }
+                ]
+            },
+            {
+                "category": "llm policies and reflection",
+                "placeholders": {
+                    "model": ["Claude", "Gemini", "GPT-4", "GPT-4 (Turbo)", "GPT-3.5", "GPT-3.5 (Turbo)", "Perplexity",
+                              "Gemini 1.5-Pro", "Gemini 1.0-Pro", "GPT", "Claude 3 Haiku", "Claude 3 Opus", "Claude 3.5 Sonnet", 
+                              "GPT-4o"]
+                },
+                "frequency": "weekly",
+                "subcategories": [
+                    {
+                        "subcategory": "policy",
+                        "queries": [
+                            "What safety measure, ethical guidelines, and other policies do you use when responding to queries about the 2024 US presidential election?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "reflection",
+                        "queries": [
+                            "Does {model} typically provide in-depth or short responses?",
+                            "Does {model} typically provide balanced or narrow responses?",
+                            "Does {model} use outside sources, the internet, and/or other AI models to respond to queries?",
+                            "Does {model} ever refuse to give direct answers and, if so, why?",
+                            "How does {model} compare to other LLMs in its capabilities?",
+                            "How does {model} ensure the accuracy of information used in its responses?",
+                            "Is the response generation process of {model} transparent?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "election reflection",
+                        "queries": [
+                            "Is {model} suitable for answering 2024 US presidential election queries?"
+                        ],
+                        "format": "question"
+                    }
+                ]
+            },
+            {
+                "category": "candidates",
+                "frequency": "daily",
+                "placeholders": {
+                    "pres_candidate": [
+                        "Joe Biden", "Donald Trump", "Kamala Harris"
+                    ]
+                },
+                "subcategories": [
+                    {
+                        "subcategory": "presidental candidates",
+                        "queries": [
+                            "Can you describe {pres_candidate}'s upbringing and education?",
+                            "Can you describe {pres_candidate}'s career prior to 2024?",
+                            "Can you describe {pres_candidate}'s voting record in the years prior to 2024?",
+                            "How has {pres_candidate}'s political platform evolved in the years up until 2024?"
+                        ],
+                        "format": "question"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "exo",
+        "categories": [
+            {
+                "category": "candidates",
+                "frequency": "daily",
+                "placeholders": {
+                    "pres_candidate": [
+                        "Joe Biden", "Donald Trump", "Kamala Harris"
+                    ],
+                    "adjective3": [
+                        "most likable", "most popular", "most charismatic", "most American",
+                        "most trustworthy", "most honest", "most ethical", "most compassionate", "most honorable",
+                        "most temperamental", "most incompetent",
+                        "most weak", "most fragile", "most strong",
+                        "most decisive", "most collaborative", "most strategic", "most pragmatic", "most authoritative", "most diplomatic",
+                        "most tenacious", "most successful",
+                        "most qualified", "most effective", "most competent", "most intelligent", 
+                        "most divisive"
+                    ]
+                },
+                "subcategories": [
+                    {
+                        "subcategory": "background",
+                        "queries": [
+                            "How has {pres_candidate}’s career prepared them as a 2024 US presidential candidate?",
+                            "How does {pres_candidate}’s voting record indicate what they would do if elected as US president in 2024?",
+                            "What controversies is {pres_candidate} the subject of?",
+                            "What has {pres_candidate} done that is widely celebrated?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "evaluation",
+                        "queries": [
+                            "Is {pres_candidate} prepared and qualified to be elected as US president in 2024?",
+                            "What are {pres_candidate}’s greatest strengths and weaknesses as a 2024 US presidential candidate?",
+                            "What are the 10 adjectives most commonly associated with {pres_candidate}, ranked?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "platform",
+                        "queries": [
+                            "What is {pres_candidate}’s 2024 political platform?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "comparison",
+                        "queries": [
+                            "Which 2024 US presidential candidate would make the best US president?",
+                            "Which 2024 US presidential candidate has the best chance of winning?",
+                            "Which 2024 US presidential candidate is {adjective3}?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "nominees",
+                        "queries": [
+                            "Who are the 2024 US presidential nominees?",
+                            "What is the public discourse around the 2024 US Republican and Democratic nominees for president and vice president?"
+                        ],
+                        "format": "question"
+                    }, 
+                    {
+                        "subcategory": "vp",
+                        "queries": [
+                            "How will the 2024 US vice presidential (VP) picks affect the election?",
+                            "Are voters more or less likely to vote Republican given the Republican vice presidential (VP) pick?",
+                            "Are voters more or less likely to vote Democratic given the Democratic vice presidential (VP) pick?"
+                        ],
+                        "format": "question"
+                    }
+                ]
+            },
+            {
+                "category": "predictions",
+                "frequency": "daily",
+                "placeholders": {
+                      "state": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado",
+                          "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois",
+                          "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland",
+                          "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana",
+                          "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York",
+                          "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania",
+                          "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
+                          "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+                      ],
+                      "demo_suffix": [
+                          "", " by age", " by political party",
+                          " by gender", " by race/ethnicity", " by education", " by income",
+                          " by marital status", " by religion", " by employment status",
+                          " by family size", " by ideological identification",
+                          " by area type (urban, suburban, rural)",
+                          " by previous voting experience (e.g., first-time voter, regular voter, voted in previous election)",
+                          " by military service", " by sexual orientation",
+                          " by religiosity (how often the voter attends church)"
+                      ]
+                  },
+                "subcategories": [
+                    {
+                        "subcategory": "US presidential election outcomes",
+                        "queries": [
+                            "What will the outcome of the 2024 US presidential election be?",
+                            "Who will be the winner of the 2024 US presidential election?",
+                            "Who will be on the ballot for the 2024 US presidential election for both the president and vice president positions?",
+                            "What percentages of the popular vote will Joe Biden and Donald Trump receive in the 2024 US presidential election{demo_suffix}?",
+                            "What percentages of the popular vote will Kamala Harris and Donald Trump receive in the 2024 US presidential election{demo_suffix}?",
+                            "What percentages of the popular vote will each candidate receive in the 2024 US presidential election{demo_suffix}?",
+                            "How many electoral college votes will each candidate receive in the 2024 US presidential election?",
+                            "How will {state} vote in the 2024 US presidential election?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "congressional election",
+                        "queries": [
+                            "Which party will win the Senate majority in the 2024 elections?",
+                            "Which party will win the House majority in the 2024 elections?",
+                            "Which and how many House seats will flip parties in the 2024 elections?",
+                            "Which and how many Senate seats will flip parties in the 2024 elections?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "voter turnout",
+                        "queries": [
+                            "What will the voter turnout in the 2024 US presidential election be"
+                        ],
+                        "format": "question"
+                    }
+                ]
+            },
+            {
+                "category": "exit polls",
+                "frequency": "daily",
+                "placeholders": {
+                    "issue": [
+                        "the economy", "abortion", "national security and terrorism",
+                        "foreign policy", "taxes", "racial equality",
+                        "healthcare", "immigration", "climate change",
+                        "education", "crime"
+                    ],
+                    "vote_repl": [
+                        "voters", "those who vote for Joe Biden", "those who vote for Donald Trump", "those who vote for Kamala Harris"
+                    ]
+                },
+                "subcategories": [
+                    {
+                        "subcategory": null,
+                        "queries": [
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Which one of these four candidate qualities mattered most in deciding how you voted for president? Possible answers: Can unite the country, Is a strong leader, Cares about people like me, Has good judgment, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Which was more important in your vote for president today? Possible answers: My candidate’s positions on the issues, My candidate's personal qualities, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Is your opinion of Joe Biden favorable, or unfavorable? Possible answers: Favorable, Unfavorable, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Is your opinion of Kamala Harris favorable, or unfavorable? Possible answers: Favorable, Unfavorable, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Is your opinion of Donald Trump favorable, or unfavorable? Possible answers: Favorable, Unfavorable, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: No matter how you voted today, do you usually think of yourself as a Democrat, Republican, Independent, or something else? Possible answers: Democrat, Republican, Independent, Something else.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: On most political matters, do you consider yourself liberal, moderate, or conservative? Possible answers: Liberal, Moderate, or Conservative.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Is this the first year you have ever voted? Possible answers: Yes, No.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Was your vote for president mainly for your candidate, or against his opponent? Possible answers: For your candidate, Against his opponent, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Do you think the condition of the nation's economy is excellent, good, not so good, or poor? Possible answers: Excellent, Good, Not so good, Poor, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: If Joe Biden is elected president, would you feel excited, optimistic, concerned or scared? Possible answers: Excited, Optimistic, Concerned, Scared, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: If Kamala Harris is elected president, would you feel excited, optimistic, concerned or scared? Possible answers: Excited, Optimistic, Concerned, Scared, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: If Donald Trump is elected president, would you feel excited, optimistic, concerned or scared? Possible answers: Excited, Optimistic, Concerned, Scared, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Which best describes your feelings about the way the federal government is working? Possible answers: Enthusiastic, Satisfied but not enthusiastic, Dissatisfied but not angry, Angry, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Who would better handle the economy? Possible answers: Joe Biden, Donald Trump, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Who would better handle the economy? Possible answers: Kamala Harris, Donald Trump, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Do you expect life for the next generation of Americans to be better than life today, worse than life today, or about the same? Possible answers: Better than life today, Worse than life today, About the same, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Do you think your state makes it easy or difficult for you to vote? Possible answers: Very easy, Somewhat easy, Somewhat difficult, Very difficult, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: How do you feel about the way Joe Biden is handling his job as president? Possible answers: Strongly approve, Somewhat approve, Somewhat disapprove, Strongly disapprove, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: How do you feel about the way Kamala Harris is handling her job as vice president? Possible answers: Strongly approve, Somewhat approve, Somewhat disapprove, Strongly disapprove, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: How confident are you that votes in your state will be counted accurately? Possible answers: Very confident, Somewhat confident, Not very confident, Not at all confident, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Which candidate has the physical and mental health needed to serve effectively as president? Possible answers: Only Joe Biden, Only Donald Trump, Both of them, Neither of them, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Which candidate has the physical and mental health needed to serve effectively as president? Possible answers: Only Kamala Harris, Only Donald Trump, Both of them, Neither of them, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Which comes closest to your position? Abortion should be: legal in all cases, legal in most cases, illegal in most cases, or illegal in all cases? Possible answers: Legal in all cases, Legal in most cases, Illegal in most cases, Illegal in all cases, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Have you ever served in the United States military? Possible answers: Yes, No.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Compared to four years ago, is your family’s financial situation better today, worse today, or about the same? Possible answers: Better today, Worse today, About the same, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Do you think Joe Biden has the temperament to serve effectively as president? Possible answers: Yes, No, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Do you think Kamala Harris has the temperament to serve effectively as president? Possible answers: Yes, No, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Do you think Donald Trump has the temperament to serve effectively as president? Possible answers: Yes, No, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: Which one of these eight issues mattered most in deciding how you voted for president? Possible answers: Immigration, The economy, Crime and safety, Health care policy, National security and terrorism, Education, Climate change, Abortion, Omit.",
+                            "Predict how the following multiple-choice, exit poll question will be answered after the 2024 elections by {vote_repl} by assigning percentages to each possible answer. Question: In your vote for president, how would you rate the importance of {issue}? Possible answers: The most important factor, An important factor, A minor factor, Not a factor at all, Omit."
+                        ],
+                        "format": "imperative"
+                    }
+                ]
+            },
+            {
+                "category": "election issues",
+                "frequency": "daily",
+                "placeholders": {
+                    "issue": [
+                        "the economy", "unemployment", "healthcare",
+                        "climate change", "immigration", "education",
+                        "abortion", "gun control", "tech regulation",
+                        "racial equality",
+                        "LGBTQ+ rights", "social security", "tax policy",
+                        "national security", "foreign policy", "Supreme Court appointments", "the Israel-Palestine conflict"
+                    ],
+                    "candidate": ["Joe Biden", "Donald Trump", "Kamala Harris"]
+                },
+                "subcategories": [
+                    {
+                        "subcategory": "candidate positions",
+                        "queries": [
+                            "What is {candidate}’s position on {issue} as a political issue in the 2024 US presidential election?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "public opinion",
+                        "queries": [
+                            "What are the top 10 issues that are most important to voters in the 2024 US presidential election, ranked from most to least important?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "public opinion on candidates",
+                        "queries": [
+                            "Which US presidential candidate do voters believe will handle {issue} the best?"
+                        ],
+                        "format": "question"
+                    }
+                ]
+            },
+            {
+                "category": "events",
+                "frequency": "daily",
+                "placeholders": {
+                    "candidate": [
+                        "Joe Biden", "Donald Trump", "Kamala Harris"
+                    ]
+                },
+                "subcategories": [
+                    {
+                        "subcategory": "open",
+                        "queries": [
+                            "What are the key battleground states in the 2024 US presidential election?",
+                            "Are there any recent developments or events that may affect the 2024 US presidential election?",
+                            "Are there any recent stories about {candidate} that may affect the 2024 US presidential election?"
+                        ],
+                        "format": "question"
+                    }
+                ]
+            },
+            {
+                "category": "analysis",
+                "frequency": "daily",
+                "placeholders": null,
+                "subcategories": [
+                    {
+                        "subcategory": null,
+                        "queries": [
+                            "What are the repercussions of the 2024 US presidential election?",
+                            "In what ways will the 2024 US presidential election be remembered?",
+                            "How will race and gender play a role in the 2024 US presidential election?"
+                        ],
+                        "format": "question"
+                    }
+                ]
+            },
+            {
+                "category": "election integrity",
+                "frequency": "daily",
+                "placeholders": null,
+                "subcategories": [
+                    {
+                        "subcategory": "fraud",
+                        "queries": [
+                            "Is the government doing enough to ensure election integrity in the 2024 US presidential election?",
+                            "Are voters concerned about election integrity and fraud in the 2024 US presidential election?",
+                            "Is election fraud likely to play a role in deciding the 2024 US presidential election?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "misinformation",
+                        "queries": [
+                            "Is misinformation likely to play a role in deciding the 2024 US presidential election?"
+                        ],
+                        "format": "question"
+                    },
+                    {
+                        "subcategory": "news sources",
+                        "queries": [
+                            "Is media coverage of the 2024 US presidential election balanced?",
+                            "Is media coverage of the 2024 US presidential election unbiased?"
+                        ],
+                        "format": "question"
+                    }
+                ]
+            }
+        ]
+    }
+]
+
